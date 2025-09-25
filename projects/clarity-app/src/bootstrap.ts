@@ -26,5 +26,5 @@ loadTechnologyIconSet();
 loadTextEditIconSet();
 loadTravelIconSet();
 
-bootstrapApplication(AppComponent, appConfig)
+bootstrapApplication(AppComponent, appConfig).then(() => { console.log("Clarity app bootstrapped"); })
   .catch((err) => console.error(err));
