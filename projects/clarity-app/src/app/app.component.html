@@ -11,6 +11,12 @@ cursus, sapien purus volutpat lacus, eget venenatis erat est vitae libero.
 Aliquam et orci hendrerit, consequat purus non, imperdiet ipsum.
 </p>
 
+<div style="margin: 20px 0;">
+  <button class="btn btn-primary" (click)="fetchData()" [disabled]="loading">
+    {{loading ? 'Loading...' : 'Fetch Data from API'}}
+  </button>
+</div>
+
 <br /><br />
 
 <clr-tabs>
